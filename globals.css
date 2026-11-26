@@ -1,0 +1,13 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+body { @apply bg-white text-slate-700 antialiased dark:bg-[#070f1f] dark:text-slate-300; }
+@layer components {
+  .card { @apply rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm backdrop-blur transition hover:-translate-y-1 hover:shadow-lg dark:border-white/10 dark:bg-white/5; }
+  .btn { @apply inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand; }
+  .btn-primary { @apply btn bg-brand text-white shadow-md hover:bg-blue-700; }
+  .btn-ghost { @apply btn border border-slate-300 text-navy hover:bg-slate-50 dark:border-white/20 dark:text-white dark:hover:bg-white/10; }
+  .h2 { @apply text-3xl font-bold tracking-tight text-navy dark:text-white; }
+  .chip { @apply rounded-full bg-blue-50 px-2.5 py-1 text-xs font-medium text-brand dark:bg-brand/20 dark:text-blue-300; }
+}
+.grid-bg { background-image: radial-gradient(rgba(37,99,235,.18) 1px, transparent 1px); background-size: 28px 28px; mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%); }
