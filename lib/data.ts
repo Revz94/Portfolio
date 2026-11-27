@@ -17,32 +17,32 @@ export const profile = {
 
 export const experience = [
   { company: "MLM Furniture", role: "Data Assistant, Sales & Operations", period: "Jun 2023 – Apr 2026", place: "Dubai, UAE",
-    tech: ["Power BI", "DAX", "SQL", "Python", "Excel", "Zoho", "Shopify"],
+    tech: ["Power BI", "DAX", "Python", "Excel", "Zoho Inventory", "Shopify"],
     bullets: [
-      "Built Power BI dashboards tracking revenue trends, delivery performance, pending orders and stock movement, giving management real-time visibility.",
-      "Integrated Zoho, Shopify, Amazon and Noon sales, POS and invoice data into one reporting view for accurate revenue reporting.",
-      "Automated recurring sales and operations reports with SQL, Python and Excel, cutting manual effort and speeding up management reporting.",
-      "Validated and reconciled data across sales, inventory and finance systems to improve reporting reliability.",
-      "Ran Python web-scraping competitor analysis to support pricing and positioning decisions.",
-      "Managed the Zoho Inventory product lifecycle (SKUs, pricing, categorisation) to keep product data structured and scalable.",
+      "Consolidated sales, POS, invoice and stock data from 4 platforms (Zoho, Shopify, Amazon, Noon) into accurate revenue reporting for finance and operations leaders.",
+      "Built and maintained 2 interactive Power BI dashboards covering sales and campaign performance, revenue trends, deliveries, pending orders and stock movement, giving managers near real-time visibility.",
+      "Replaced manual report building with Python and Excel automation, cutting preparation time by 60% and making outputs more consistent.",
+      "Reconciled figures with the finance team every month and cross-checked platforms against each other, keeping sales, inventory and finance numbers aligned.",
+      "Owned the catalogue of 3,000+ imported furniture items in Zoho Inventory (SKU naming, cost pricing, images, categories), working at a pace of 300 new listings per week.",
+      "Tracked competitor pricing and positioning through Python web scraping to support pricing decisions.",
     ] },
   { company: "Myn Global", role: "Data Analyst, Ride-Hailing & E-commerce", period: "Sep 2022 – Apr 2023", place: "Bangalore, India",
     tech: ["SQL", "Python", "Cohort Analysis", "Funnel Analysis"],
     bullets: [
-      "Analysed the ride lifecycle (acquisition, activation, repeat use, drop-off) to uncover customer-journey friction.",
-      "Ran cohort and segmentation analysis to understand retention and booking behaviour across customer groups.",
-      "Built funnel analysis from app visit to completed booking to pinpoint conversion leakage for targeted optimisation.",
-      "Analysed peak-hour demand, ride density and regional performance to support pricing and demand decisions.",
-      "Delivered ad-hoc insights to product and operations teams to guide feature and performance improvements.",
+      "Mapped the rider journey from sign-up to repeat use and drop-off, uncovering friction points behind lost customers.",
+      "Ran cohort and segmentation analysis to compare retention, usage frequency and booking behaviour across customer groups.",
+      "Built a funnel from app visit to completed booking that pinpointed where conversions leaked, guiding targeted fixes.",
+      "Studied peak-hour demand, ride density and regional differences to support pricing and demand planning.",
+      "Provided ad-hoc analysis to product and operations teams that informed feature changes and performance work.",
     ] },
   { company: "Satyukt Analytics", role: "Junior Data Analyst", period: "Feb 2021 – Aug 2022", place: "Bangalore, India",
     tech: ["Python", "SQL", "R", "Web Scraping", "ML data prep"],
     bullets: [
-      "Automated data extraction and preprocessing in Python, turning raw unstructured data into analysis-ready datasets.",
-      "Wrote advanced SQL across multi-source databases for exploratory analysis and reporting.",
-      "Scraped government and public agricultural platforms to build reliable datasets for research.",
-      "Supported earthquake simulation analysis in R for catastrophe risk modelling for international clients.",
-      "Prepared and validated large datasets for machine-learning workflows, ensuring quality and feature consistency.",
+      "Automated Python pipelines that turned raw, unstructured data into clean datasets, and validated large datasets used for machine learning.",
+      "Wrote advanced SQL across multiple databases to answer exploratory questions and meet reporting needs.",
+      "Collected data from government and public agricultural sites through scraping to build dependable research datasets.",
+      "Assisted with earthquake simulation analysis in R for catastrophe risk modelling for international clients.",
+      "Worked with data scientists and domain experts to turn business requirements into model-ready datasets.",
     ] },
 ];
 
@@ -50,10 +50,10 @@ export const experience = [
 export const projects = [
   { title: "Multi-Channel Sales Dashboard", problem: "Sales data was split across Zoho, Shopify, Amazon and Noon, so revenue visibility was slow and manual.",
     dataset: "Invoice, POS and order data from 4 platforms", tools: ["Power BI", "DAX", "SQL"],
-    insights: "TODO: add 2–3 real insights (e.g. top channels, delivery delays).", impact: "TODO: add measured impact (e.g. hours saved per week).", github: "#", demo: "#" },
+    insights: "TODO: add 2–3 real insights (e.g. top channels, delivery delays).", impact: "2 dashboards giving near real-time visibility across 4 sales platforms.", github: "#", demo: "#" },
   { title: "Automated KPI Reporting Pipeline", problem: "Recurring operational reports took repeated manual work and risked inconsistencies.",
-    dataset: "Sales, inventory and finance exports", tools: ["Python", "SQL", "Excel"],
-    insights: "TODO: add insights.", impact: "TODO: add measured impact.", github: "#", demo: "#" },
+    dataset: "Sales, inventory and finance exports", tools: ["Python", "Excel"],
+    insights: "TODO: add insights.", impact: "Cut report preparation time by 60%.", github: "#", demo: "#" },
   { title: "Competitor Pricing Intelligence", problem: "Pricing decisions lacked a structured view of competitor prices and positioning.",
     dataset: "Public competitor product pages (scraped)", tools: ["Python", "Requests", "Beautiful Soup", "Pandas"],
     insights: "TODO: add insights.", impact: "TODO: add measured impact.", github: "#", demo: "#" },
@@ -69,6 +69,7 @@ export const skills: { group: string; items: [string, number][] }[] = [
 ];
 
 export const certs = [
+  { name: "B.Tech, Electrical & Electronics Engineering", org: "Kerala University", year: "2016", type: "Degree" },
   { name: "Post Graduate Certification in Data Science", org: "IIIT Bangalore", year: "2021", type: "Data Science" },
   { name: "Exploratory Data Analysis for Machine Learning", org: "Coursera", year: "TODO", type: "Analytics" },
   { name: "Claude 101 & Claude Code 101", org: "Claude Academy (Anthropic)", year: "2026", type: "AI Tools" },
@@ -77,7 +78,7 @@ export const certs = [
 // Only facts that come from your CV. Add more if you can verify them.
 export const stats = [
   { label: "Years of Experience", value: 5, suffix: "+" },
-  { label: "Companies", value: 3, suffix: "" },
-  { label: "Data Sources Integrated", value: 4, suffix: "" },
-  { label: "Industries Served", value: 4, suffix: "" },
+  { label: "Power BI Dashboards", value: 2, suffix: "" },
+  { label: "Platforms Integrated", value: 4, suffix: "" },
+  { label: "Inventory Items Managed", value: 3000, suffix: "+" },
 ];
